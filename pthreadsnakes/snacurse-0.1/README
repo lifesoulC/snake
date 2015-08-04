@@ -1,0 +1,20 @@
+编译：
+编译前请先安装依赖的库,在当前目录下：
+./configure
+make
+
+运行：
+cd src
+./snacurse
+
+依赖的库：
+libncurses5-dev - developer's libraries for ncurses
+
+安装依赖的库：
+sudo apt-get install libncurses5-dev
+
+郑重申明：
+尽量不要sudo make install,由于我们对GNU工具还不够熟悉，如果对您的系统造成任何影响，后果自负
+如果按照上面的步骤无法成功编译,安装依赖的库之后，可以尝试下面的方法：
+cd src
+make -f Makefile.bak
